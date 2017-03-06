@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.montreal.wmiController.PrincipalController">
+   <children>
+      <VBox prefHeight="435.0" prefWidth="248.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ToolBar>
+              <items>
+                <Button fx:id="btnConfigurar" mnemonicParsing="false" onAction="#btnConfigurarClick" text="Configurar" />
+                  <Label fx:id="lblExecucao" text="-" />
+              </items>
+            </ToolBar>
+            <TableView fx:id="tvServicos" VBox.vgrow="ALWAYS" />
+            <ToolBar prefHeight="40.0" prefWidth="200.0">
+               <items>
+                  <Label text="-" />
+               </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
